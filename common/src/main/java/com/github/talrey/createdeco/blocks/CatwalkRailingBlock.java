@@ -74,7 +74,8 @@ public class CatwalkRailingBlock extends Block implements IWrenchable, ProperWat
     var x = subbox.x;
     var z = subbox.z;
 
-    if (level instanceof ClientLevel) return InteractionResult.PASS;
+    // Removing this is totally not going to break things! /s
+    // if (level instanceof ClientLevel) return InteractionResult.PASS;
 
     //check if the top face is wrenched, remove side
     if (face == Direction.UP) {
